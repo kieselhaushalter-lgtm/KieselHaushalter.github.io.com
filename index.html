@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青岛海一啸信息科技有限公司 | 网站设计与开发</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .logo svg {
+            width: 60px;
+            height: 60px;
+            fill: white;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .company-name {
+            font-size: 20px;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .services {
+            text-align: left;
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .service-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-item strong {
+            color: #667eea;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+
+        .contact-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 15px;
+        }
+
+        .contact-email {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .contact-email:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H9v-2h6v2zm-3-7c-1.38 0-2.5-1.12-2.5-2.5S10.62 6 12 6s2.5 1.12 2.5 2.5S13.38 11 12 11z"/>
+            </svg>
+        </div>
+        <h1>💻 专业网站设计与开发</h1>
+        <p class="company-name">青岛海一啸信息科技有限公司</p>
+        
+        <p>
+            我们是一家专注于网站设计、官网搭建的信息技术公司，致力于为企业和个人提供高品质的数字化解决方案。
+            从项目策划、视觉设计到技术开发、上线运营，我们提供一站式服务，助您在互联网时代脱颖而出。
+        </p>
+
+        <div class="services">
+            <h2>🎯 我们的核心服务</h2>
+            <div class="service-item">
+                <strong>✨ 企业官网设计</strong>
+                为您的企业打造专业的品牌形象，提升品牌价值
+            </div>
+            <div class="service-item">
+                <strong>🎨 响应式网站开发</strong>
+                适配各种设备，提供一致的用户体验
+            </div>
+            <div class="service-item">
+                <strong>⚡ 高性能网站优化</strong>
+                快速加载，提升用户体验和SEO效果
+            </div>
+            <div class="service-item">
+                <strong>🔧 网站维护托管</strong>
+                全程无忧的技术支持与维护服务
+            </div>
+            <div class="service-item">
+                <strong>📱 移动应用开发</strong>
+                原生App和跨平台应用开发服务
+            </div>
+            <div class="service-item">
+                <strong>🛒 电商平台搭建</strong>
+                功能完善的在线商城解决方案
+            </div>
+        </div>
+
+        <h2 style="font-size: 24px; margin-bottom: 25px; color: #333;">📸 服务展示</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="网站设计">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop" alt="代码开发">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=500&h=300&fit=crop" alt="团队协作">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=300&fit=crop" alt="项目开发">
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>📞 联系我们</h2>
+            <p>欢迎咨询我们的服务，期待与您合作！</p>
+            <p>我们将竭诚为您提供最优质的服务</p>
+            <a href="mailto:hyx@haiyixiao.cn" class="contact-email">
+                📧 hyx@haiyixiao.cn
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 青岛海一啸信息科技有限公司 | 专业 · 品质 · 创新</p>
+        </div>
+    </div>
+</body>
+</html>
